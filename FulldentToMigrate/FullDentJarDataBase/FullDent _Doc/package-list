@@ -1,0 +1,16 @@
+exception
+gestioneAccessi
+gestioneAttrezzature
+gestioneCalendario
+gestioneFornitori
+gestionePersonale
+gestioneSala
+guiAccessi
+guiAmministratore
+guiAttrezzature
+guiCalendario
+guiFornitori
+guiPersonale
+guiSale
+guiSegretaria
+junit_test

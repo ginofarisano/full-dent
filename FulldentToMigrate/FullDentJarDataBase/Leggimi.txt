@@ -1,0 +1,4 @@
+Caricare il "DataBaseProgetto_FullDent_Gruppo14" in mySQL;
+Settare il File "uspsw" con il proprio ID e PASSWORD di mySQL;
+Avviare l'applicazione FullDent.JAR
+

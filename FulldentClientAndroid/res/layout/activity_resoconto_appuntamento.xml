@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+     <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_interno" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/template" >
+
+    <TextView
+        android:id="@+id/txtViewdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="data"
+        android:textColor="#5A7E90" />
+
+    <TextView
+        android:id="@+id/txtViewWhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextView1"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="Informazioni"
+        android:textColor="#5A7E90"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/bntRimuovi"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/entra"
+        android:text="Cancella appuntamento"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtViewDottore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="dottore"
+        android:textColor="#5A7E99"
+        android:textSize="25dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relLNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#5A7E90"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/txtViewAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="81dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="7dp"
+            android:text="Non hai effettuato nessuna prenotazione! Puoi effettuare una prenotazione cliccando sul bottone gestione prenotazione nella home dell&apos;applicazione"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtViewNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtViewAttention"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="ATTENZIONE!!!"
+            android:textColor="#FF0000"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

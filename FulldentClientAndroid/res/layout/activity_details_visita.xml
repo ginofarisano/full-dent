@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+     <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_interno" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/template" >
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="title"
+        android:textColor="#5A7E90" />
+
+    <TextView
+        android:id="@+id/txtViewDottore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtViewTitle"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="dottore"
+        android:textColor="#5A7E90" />
+
+    <TextView
+        android:id="@+id/txtViewInformazioni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtViewDottore"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine"
+        android:text="Informazioni"
+        android:textColor="#5A7E90"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtViewPagato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textMultiLine"
+        android:text="pagato"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+    
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>

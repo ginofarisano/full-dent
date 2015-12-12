@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            android:id="@+id/imgdoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bntRichista"
+            android:layout_marginTop="42dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gestione_utente_btn" />
+
+        <TextView
+            android:id="@+id/txtGestioneUtente"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imgdoc"
+            android:layout_alignLeft="@+id/txtPrenotazione"
+            android:layout_alignRight="@+id/txtPrenotazione"
+            android:layout_alignTop="@+id/imgdoc"
+            android:background="#00000000"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="username"
+            android:inputType="textVisiblePassword"
+            android:onClick="gestioneUtente"
+            android:paddingTop="5dp"
+            android:text="Gestione Utente"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/iconLogout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:onClick="logout"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/bntRichista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/prenotazione_btn" />
+
+        <TextView
+            android:id="@+id/txtPrenotazione"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/bntRichista"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/bntRichista"
+            android:layout_margin="7dp"
+            android:background="#00000000"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="username"
+            android:inputType="textVisiblePassword"
+            android:onClick="prenota"
+            android:paddingTop="5dp"
+            android:text="Prenota"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login"
+        android:layout_below="@+id/imageLogo"
+        android:clipToPadding="false" >
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/name_bg" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:text="Nome e Cognome"
+            android:textColor="#5A7E90"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rltSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:onClick="logout" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_interno" />
+
+</RelativeLayout>
